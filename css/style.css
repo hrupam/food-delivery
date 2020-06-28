@@ -4,6 +4,10 @@
 font-family: 'Bree Serif', serif;
 font-family: 'Ubuntu', sans-serif; */
 
+/* .animate__animated.animate__slideInLeft{
+    --animate-duration: 2s;
+} */
+
 /* CSS RESET */
 
 * {
@@ -34,6 +38,7 @@ html {
     position: sticky;
     top: 0px;
     font-family: 'Baloo Bhai 2', cursive;
+    z-index: 2;
 }
 
 #navbar::before {
@@ -106,17 +111,20 @@ html {
     margin: 15px 0px;
     padding: 7px 9px;
     animation-name: buttonAnimation;
-    animation-duration: 0.4s;
+    animation-duration: 0.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
 @keyframes buttonAnimation {
-    from {
+    0% {
         transform: scale(1);
     }
-    to {
+    50% {
         transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
@@ -154,7 +162,7 @@ html {
 }
 
 .box {
-    border: 3.2px solid red;
+    border: 3.2px solid #d616167a;
     border-radius: 20px;
     padding: 5px 28px;
     margin: 6px 10px;
@@ -288,17 +296,17 @@ footer h3 {
     list-style: none;
     font-size: 1.1rem;
     display: block;
-    margin: 5px 0px;
+    margin: 7px 1px;
 }
 
 .kitchen-contact li a {
     text-decoration: none;
-    font-family: 'Baloo Bhai 2', cursive;
-    padding: 0px 6px;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    padding: 7px 9px;
     background-color: gray;
-    margin: 3px 12px;
-    border-radius: 10px;
-    color: whitesmoke;
+    margin: 0px 13px;
+    border-radius: 13px;
+    color: white;
 }
 
 .kitchen-contact li a:hover {
